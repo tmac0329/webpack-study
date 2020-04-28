@@ -1,7 +1,15 @@
 import './index.less';
 import '../public/js/test.js';
 import someone from '../public/js/importFile.js'
+import '../public/css/test.css';
+import '../public/css/test2.css';
+
+if(module && module.hot){
+    module.hot.accept()
+}
+
 let exampleRequire = require('../public/js/requireFile.js');
+
 class Animal{
     constructor(name){
         this.name = name;

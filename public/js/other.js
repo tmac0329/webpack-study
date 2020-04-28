@@ -1,4 +1,4 @@
-class Person{
+class Pig{
     constructor(name){
         this.name = name;
     }
@@ -7,5 +7,5 @@ class Person{
     }
 }
 
-const person = new Person('Tom');
-console.log(person.name);
+const pig = new Pig('Tom');
+console.log(pig.name);
