@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="//common/css/header.css">
+    
+    <title>你好才怪</title>
+<link href="css/index.css" rel="stylesheet"></head>
+<body>
+    <img src="../src/assets/ep.jpeg" alt="">
+    <div class="test-div"></div>
+    <div class="test-div2"></div>
+    <button onclick="testClick()">button</button>
+    
+    <script src="//common/header.min.js" type="text/javascript"></script>
+    
+    <script src="./js/test.js"></script>
+    <script>
+        function testClick(){
+            import('./js/lazy.js').then(()=>{
+                console.log('异步调取lazy.js成功');
+            });
+            
+        }
+    </script>
+<script src="index.a936c2.js"></script></body>
+</html>
